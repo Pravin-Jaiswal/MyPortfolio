@@ -2,7 +2,7 @@ body {
     padding-top: 20px;
 }
 
-.resume {
+.header {
     padding-top: 60px;
 }
 
@@ -79,38 +79,47 @@ body {
     background-color: aqua;
     padding-top: 0%;
     padding-right: 15px;
-    
+
 }
 
 .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item a {
     color: aqua;
 }
+
 @media (min-width: 768px) {
     .column1 h1 {
-    font-size: 5rem;
-    font-style: italic;
-    font-weight: 700;
-    margin-bottom:25px
-}
-    
+        font-size: 5rem;
+        font-style: italic;
+        font-weight: 700;
+        margin-bottom: 25px;
+        font-family:"Trirong", serif;
+    }
+
 }
 
 @media (max-width: 768px) {
-   .column1 h1 {
-    font-size: 60px;
-    font-style: italic;
-    font-weight: 700;
-    text-align:center;
-    margin-bottom:25px;
+    .column1 h1 {
+        font-size: 70px;
+        font-style: italic;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 25px;
+        font-family:"Trirong", serif;
+    }
 }
+@media (max-width: 992px) {
+    .column2 img {
+        height: 250px;
+    }
 }
+
 @media (min-width: 992px) {
-   .column1 h1 {
-    font-size: 100px;
-    font-style: italic;
-    font-weight: 700;
-    margin-bottom:25px;
-}
+    .column1 h1 {
+        font-size: 100px;
+        font-style: italic;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
 }
 
 .educations {
@@ -197,7 +206,7 @@ body {
 footer {
     text-align: center;
     padding-bottom: 30px;
-    margin-right:-15px;
+    margin-right: -15px;
 }
 
 footer h1 {
