@@ -135,6 +135,14 @@ body {
     height: 20px;
     margin-left: 0px;
 }
+@media (max-width: 450px) {
+    .skills .main p{
+        font-size:small;
+    }
+    .skills .main{
+        padding: 10px;
+    }
+}
 
 .skills1 {
     text-align: right;
@@ -193,11 +201,25 @@ body {
     color: white;
     width: 95%;
     border-radius: 20px;
-    height: 350px;
+    /* height: 350px; */
     padding: 30px;
 
 }
-
+@media (max-width: 768px) {
+    .contact .columnA{
+        width: 100%;
+    }
+    .contact .columnA p{
+        font-size: medium;
+    }
+    .contact .columnA span{
+        font-size: small;
+    }
+    .contact .row {
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+}
 .contact {
     margin-left: 35px;
     padding-bottom: 50px;
