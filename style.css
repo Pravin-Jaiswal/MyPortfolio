@@ -111,6 +111,9 @@ body {
     .column2 img {
         height: 250px;
     }
+    .jumbotron {
+        margin-top: 10px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -127,62 +130,26 @@ body {
     width: 90%;
     padding: 20px;
 }
-
-.container1 {
-    width: 90%;
-    background-color: #ddd;
-    border-radius: 20px;
-    height: 20px;
-    margin-left: 0px;
-}
-@media (max-width: 450px) {
-    .skills .main p{
-        font-size:small;
-    }
-    .skills .main{
-        padding: 10px;
-    }
-}
-
-.skills1 {
-    text-align: right;
-    /* padding-top: 10px;  */
-    /* padding-bottom: 10px;  */
+.skills .skill-row .skill-col .skill-card h6{
+    text-align: center;
     color: white;
-    border-radius: 20px;
+    font-size:15px;
 }
-
-.html {
-    width: 90%;
-    height: 20px;
-    background-color: rgb(25, 56, 87);
+.skills .skill-row .skill-col .skill-card{
+    background-color: black;
 }
-
-.css {
-    width: 90%;
-    height: 20px;
-    background-color: rgb(54, 111, 168);
+.skills .skill-row .skill-col .skill-card img{
+    padding: 15px;
 }
-
-.js {
-    width: 90%;
-    height: 20px;
-    background-color: rgb(17, 130, 243);
+@media (max-width:496px) {
+    .skills .skill-row .skill-col .skill-card{
+        height: 120px;
+        padding-top: 9px;
+    }
+    .skills .skill-row .skill-col .skill-card h6{
+        font-size:10px;
+    }
 }
-
-.skills h1 {
-    margin: 30px 0px;
-}
-
-.main {
-    width: 90%;
-    padding: 50px;
-}
-
-.main p {
-    color: white;
-}
-
 .reveal {
     position: relative;
     transform: translateY(100px);

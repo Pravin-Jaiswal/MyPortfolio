@@ -18,6 +18,16 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -76,8 +86,8 @@
                 <a href="documents/PravinResume.pdf"><button type="button" class="btn btn-outline-secondary">Resume</button></a>
             </div>
         </div>
-        <div class="row ps-4">
-            <div class="column1 col-lg-7 col-sm-6 col-md-7" id="about">
+        <div class="row ps-4 pt-5" id="about">
+            <div class="column1 col-lg-7 col-sm-6 col-md-7">
                 <h1 class="card-title">
                     Hello,
                     <br>
@@ -93,9 +103,9 @@
                 <img src="profile_pravin.jpg" class="rounded-circle shadow-lg p-2 bg-body rounded card-img-top w-100" height="350px" />
             </div>
         </div>
-        <div class="academics mt-5 ps-5" id="academics">
+        <div class="academics mt-5 ps-5 pt-5" id="academics">
             <h1><u>MY Academics</u>:</h1>
-            <div class="educations bg-dark reveal">
+            <div class="educations mt-5 bg-dark reveal">
                 <ul>
                     <li>
                         <h4>Junior Full-Stack Java Developer Course</h4>
@@ -116,24 +126,79 @@
                 </ul>
             </div>
         </div>
-        <div class="skills mt-5 ms-5" id="skills">
+        <div class="skills mt-5 ms-5 pt-5" id="skills">
             <h1><u>Skills</u>:</h1>
-            <div class="main bg-dark reveal">
-                <p class="card-text">HTML,CSS,Bootstrap,JavaScript</p>
-                <div class="container1">
-                    <div class="skills1 html">80%</div>
+            <div class="skill-row slider me-4 mt-5 reveal">
+                <div class="col-4 ms-3 skill-col" >
+                    <div class="card skill-card">
+                        <img src="documents/java.svg" class="card-img-top" alt="...">
+                        <h6>Java</h6>
+                    </div>
                 </div>
-                <p class="card-text">Java,SpringBoot,Hibernate,React</p>
-                <div class="container1">
-                    <div class="skills1 css">80%</div>
+                <div class="col-4 ms-3 skill-col" >
+                    <div class="card skill-card">
+                        <img src="documents/springboot.svg" class="card-img-top" alt="...">
+                        <h6>SpringBoot</h6>
+                    </div>
                 </div>
-                <p class="card-text">MySQL,GitHub,Git</p>
-                <div class="container1">
-                    <div class="skills1 js">80%</div>
+                <div class="col-4 ms-3 skill-col" >
+                    <div class="card skill-card">
+                        <img src="documents/mysql.svg" class="card-img-top" alt="...">
+                        <h6>MySQL</h6>
+                    </div>
                 </div>
+                <div class="col-4 ms-3 skill-col" >
+                    <div class="card skill-card">
+                        <img src="documents/Js.svg" class="card-img-top" alt="...">
+                        <h6>JavaScript</h6>
+                    </div>
+                </div>
+                <div class="col-4 ms-3 skill-col" >
+                    <div class="card skill-card">
+                        <img src="documents/bootstrap.svg" class="card-img-top" alt="...">
+                        <h6>Bootstrap</h6>
+                    </div>
+                </div>
+                <div class="col-4 ms-3 skill-col" >
+                    <div class="card skill-card">
+                        <img src="documents/icons8-html-240.png" class="card-img-top" alt="...">
+                        <h6>HTML</h6>
+                    </div>
+                </div>
+                <div class="col-4 ms-3 skill-col" >
+                    <div class="card skill-card">
+                        <img src="documents/icons8-css-200.png" class="card-img-top" alt="...">
+                        <h6>CSS</h6>
+                    </div>
+                </div>
+                <div class="col-4 ms-3 skill-col" >
+                    <div class="card skill-card">
+                        <img src="documents/git.svg" class="card-img-top" alt="...">
+                        <h6>Git</h6>
+                    </div>
+                </div>
+                <div class="col-4 ms-3 skill-col" >
+                    <div class="card skill-card">
+                        <img src="documents/icons8-github-240.png" class="card-img-top" alt="...">
+                        <h6>Github</h6>
+                    </div>
+                </div>
+                <div class="col-4 ms-3 skill-col" >
+                    <div class="card skill-card">
+                        <img src="documents/vs.svg" class="card-img-top" alt="...">
+                        <h6>Visual Studio</h6>
+                    </div>
+                </div>
+                <div class="col-4 ms-3 skill-col" >
+                    <div class="card skill-card">
+                        <img src="documents/eclips.svg" class="card-img-top" alt="...">
+                        <h6>Eclipse</h6>
+                    </div>
+                </div>
+                
             </div>
         </div>
-        <div class="projects my-5 ps-5" id="projects">
+        <div class="projects my-5 ps-5 pt-5" id="projects">
             <h1><u>My Projects</u>:</h1>
             <div class="row me-2 mt-5 reveal">
                 <div class="col-sm-3">
@@ -178,7 +243,7 @@
                 </div>
             </div>
         </div>
-        <div class="certificates my-5 ps-5" id="certificates">
+        <div class="certificates my-5 ps-5 pt-5" id="certificates">
             <h1><u>My Certificates</u>:</h1>
             <div class="row me-2 mt-5 reveal">
                 <div class="col-sm-4">
